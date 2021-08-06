@@ -1,7 +1,5 @@
 function fibo(num) {
-  if (num === 0) {
-    return 0;
-  } else if (num <= 2) {
+  if (num <= 2) {
     return 1;
   }
   return fibo(num - 2) + fibo(num - 1);
