@@ -1,4 +1,5 @@
 const stones = [5, 3, 4, 1, 3, 8, 3];
+// const stones = [4, 5, 3];
 const dogs = [
   {
     name: '루비독',
@@ -37,7 +38,7 @@ const survive = (stones, dogs) => {
       // 독의 점프력만큼 이동
       dogLocation += +dog.jump;
       // 독의 위치의 돌에서 무게만큼 차감
-      stones[dogLocation - 1] -= dog.weight;
+      stones[dogLocation - 1] -= +dog.weight;
       // 만약 돌의 무게가 0보다 작다면
       if (stones[dogLocation - 1] < 0) {
         // 독은 죽음
